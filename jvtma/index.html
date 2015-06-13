@@ -1,0 +1,105 @@
+<!-- those two lines are document type declaration, which is technical standards for HTML-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+            "http://www.w3.org/TR/html4/loose.dtd">
+	<head> <!-- main structure for HTML-->
+		<title>Calculator for loan repayment</title> <!-- title discription of the page -->
+		<link rel="stylesheet" type="text/css" href="css/calculator.css" > <!-- This code links page with CSS call BB_house.css -->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+		<script type="text/javascript" src="include/calculator.js"></script>
+	</head>
+
+	<body> <!-- main structure for HTML-->
+		<div id="main"> <!-- Div main page-->
+				<!-- header -->
+				<div id="header">
+					<h1>Calculator For Loan Monthly Re-payment</h1> <!-- H1 main heading -->
+				</div>
+				<!-- Main content (Text)  of the page -->
+			<div id="content">
+				<!-- Left column-->
+				<div id="leftcol">
+				<div class="left">xxx</div>
+				</div>
+				<!--Main container-->
+				<div id="midcol">
+					<!-- sub-heading h2 -->
+					<h2>How calculator works</h2>
+					<div class="inText">
+						<p>The purpose of this loan monthly re-payment calculator web page is that you can easily find out what your monthly re-payment would be for the amount you wish to borrow</p>
+						<p>Firstly entry amount that you wish borrowed into the label text box. Amount must be greater (more) that &#163;1,000.00 and there is a set of limit to &#163;1,000,000,000. Into the label text box could be entered only numbers without spaces or characters such us (&#163; , ' .). For example for if you want to input ten thousands input 10000.</p>
+						<p>Then select year in the drop box menu. This means for how long you wish to carry on with your loan. The maximum years that you can carry on the loan is 25 years and minimum is 1 year.</p>
+						<p>After choose whether you would like to protect your loan or not by ticking check box. The protection on the loan is 5&#37; of the total loan value before interest.</p>
+						<p>Afterword when the amount and year are selected press submit bottom. Below the form would appear results on the calculation. The amount, years or protection could be modified or result and amount could be cleared by pressing Clear All bottom.</p>
+					</div>
+					
+					<!-- form for inputing amount, select year and check protection -->
+					<form name="userForm" action="?" id="frm1" >
+						<fieldset id="personal">
+							<legend> Loan Calculator </legend>
+							<div class="isSmaller"><span id="smaller">X</span></div>
+							<label>The amount you want to borrow:</label><input type="text" id="EnterYourAmount" name="loanAmount" maxlength="11" onkeyup="getValues();"> <span id="error"></span>
+							<div class="worningMessage"><span id="worningMessage2">x</span></div>
+							<label>Repayment period in years e.g 1-25 years:</label>
+								<select id="years" name="yearsDropDown">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>13</option>
+									<option>14</option>
+									<option>15</option>
+									<option>16</option>
+									<option>17</option>
+									<option>18</option>
+									<option>19</option>
+									<option>20</option>
+									<option>21</option>
+									<option>22</option>
+									<option>23</option>
+									<option>24</option>
+									<option>25</option>
+								</select>
+							<div class="chBox">
+								<label>5&#37; protect of your loan:</label><input id="insurence" type="checkbox" >
+							</div>
+							<div id="button">
+								<input type="button" value="Calculate Loan" id="disable" onClick="getSum()" >
+							</div>
+						</fieldset>
+					</form >
+						<!-- result -->
+						<div class="baseRate">Your standard rate is: <span id="baseRate2" class="baseRate3"></span></div>
+						<div class="rate">Your rate is: <span id="rate2" class="rate3"></span></div>
+						<div class="totalRate">Your total rate is: <span id="totalRate2" class="totalRate3"></span></div>
+						<div class="yearPayment">Your duration of re&#45;payment in years: <span id="yearPayment2" class="yearPayment3"></span></div>
+						<div class="monthPayment">Your duration of re&#45;payment in months:<span id="monthPayment2" class="monthPayment3"></span></div>
+						<div class="monthlyInterest">Your interest amount is: <span id="monthlyInterest2" class="monthlyInterest3"></span></div>
+						<div class="protection">Your loan monthly protection is: <span id="protection2" class="protection3"></span></div>
+						<div class="totalProtection">Your total loan protection is <span id="totalProtection2" class="totalProtection3"></span></div>
+						<div class="totalSum">Your total amount is: <span id="totalSum2" class="totalSum3"></span></div>
+						<div class="totalSumWithPrt">Your total amount with protection is: <span id="totalSumWithPrt2" class="totalSumWithPrt3"></span></div>
+						<div class="monthlyPayment">Your monthly payment would be: <span id="monthlyPayment2" class="monthlyPayment3"></span></div>
+						<!--clear bottom -->
+						<div class="clear">
+							<input type="button" id="Clearbtn" value="Clear All" onClick="getClear()" >
+						</div>
+				</div>
+				<!-- right column-->
+				<div id="rightcol">
+				</div>
+			</div>
+				<!-- Footer-->
+			<div id="footer">
+				<p>Copyright &#169; Calcularor for loan repayment, created by David Sajdl 2013</p>
+			</div>
+		</div>
+	</body>
+</html>

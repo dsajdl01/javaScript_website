@@ -1,0 +1,312 @@
+/* 
+CSS file for index.html
+Created by David Sajdl
+Date: 14/02/2013
+for Javascript TMA
+userName: dsajdl01
+Tutor name: Dionisis Dimakopoulos 
+*/
+
+/* gets background to page */ 
+body
+{
+	background: #efefef;
+}
+/* main container */
+#main{ 
+	width: 1000px;
+	border: 1.5px solid #000000; 
+	margin:1em auto;
+}
+/* header */
+#header{
+	background: #8dcdf3;
+	padding: 0px 10px 0.5px 0px;
+	margin: -32px 0px -1px 0px;
+	border-bottom: 2px solid #000000;
+}
+/* main contenet give image to background as three column */
+#content{
+	background:url(../image/threeColumns.jpg);
+	overflow: hidden;
+	padding-bottom: 2em;
+	font-size: small
+	}
+/* left column*/
+#leftcol{
+	float:left;
+	width: 10%;
+	color: #37a5e6;
+}
+/* middle column*/
+#midcol{
+	float:left;
+	width: 80%;
+}
+/*right column*/
+#rightcol{ 
+	float: left;
+	width: 10%;
+}
+/*footer*/
+#footer{
+	background: #8dcdf3;
+	text-align:right;
+	clear:both;
+	font-size: 0.7em;
+	border-top: 1px solid #000000;
+	padding: 8px 0px 1px 0px;
+}
+/*heading of the page h1*/
+h1{	
+	text-align: Center;
+	text-decoration: underline;
+	color: #126596;
+	font-size: 3em;
+	font-style: italic;
+	 padding-top: 7px;
+	margin-bottom: 20px
+}
+/*sub heading h2 */
+h2
+{
+	color: #126596;
+	font-size: 2em;
+	margin-left: 20px;
+}
+.inText
+{
+  border-top: 3px groove #126596;
+  margin: -23px 30px 30px 15px;
+  font-size: 15px;
+}
+p{
+	color: #000000;
+	margin-left: 20px;
+	margin-right: 15px
+}
+/* deal with form and data input*/
+#EnterYourAmount
+{
+	padding: 2px 0px 2px 1px;
+	margin:  0px 0px 0px 50px;
+}
+#personal{
+	border:1px inset #8dcdf3;
+	font-weight:bold;
+}
+#personal label{
+	margin: 10px;
+	font-size:100%;
+	padding-top:.2em;
+}
+#button
+{
+	padding: 0px 0px 10px 322px;
+}
+legend
+{
+	color: #ffffff;
+	background: #37a5e6;
+	margin-left: 10px;
+	font-size: 1.5em;
+}
+.chBox
+{
+	margin-top: 30px;
+}
+#insurence
+{
+  	padding: 2px 0px 2px 1px;
+	margin:  0px 0px 0px 100px;
+}
+form
+{
+  border:5px outset #8dcdf3;
+  margin: 1px 230px 40px 80px;
+  background: #efefef;
+}
+#EnterYourAmount:focus
+{
+	background-color:#8dcdf3;
+}
+.isSmaller
+{
+	color: #efefef;
+	padding-left: 80px;
+	margin-bottom: 5px;
+}
+.worningMessage
+{
+	color: #efefef;
+	padding-left: 120px;
+	margin-top: 1px;
+	padding-bottom: 13px;
+}
+/*deal with outcome result gives grey white and blue strips */
+.baseRate{
+  	background-color:  #37a5e6;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.baseRate3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+.rate{
+  	background-color:  #efefef;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;	
+	}
+
+.rate3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+
+.totalRate{
+  	background-color:  #37a5e6;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.totalRate3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+.yearPayment{
+  	background-color:  #efefef;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.yearPayment3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+.monthPayment
+{
+	background-color:  #37a5e6;
+  	padding:4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.monthPayment3
+{
+	float: right;
+	padding-right: 20px;
+	font-style: italic;
+}
+.monthlyInterest{
+  	background-color:  #efefef;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.monthlyInterest3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+.protection{
+  	background-color:  #37a5e6;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.protection3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+.totalProtection
+{
+	background-color:  #efefef;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.totalProtection3
+{
+	float: right;
+	padding-right: 20px;
+	font-style: italic;
+}
+.totalSum{
+  	background-color:  #37a5e6;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.totalSum3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+.totalSumWithPrt
+{
+	background-color:  #efefef;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.totalSumWithPrt3
+{
+	float: right;
+	padding-right: 20px;
+	font-style: italic;
+}
+.monthlyPayment{
+  	background-color:  #37a5e6;
+  	padding: 4px 10px 4px 15px;
+  	margin-left: 120px;
+  	margin-right: 145px;	
+  	font-size: 20px;
+  	color: #000000;
+}
+.monthlyPayment3
+{
+  float: right;
+  padding-right: 20px;
+  font-style: italic;
+}
+/* deals with clear all button*/
+.clear
+{
+  margin: 10px 145px 1px 565px;
+  background: #efefef;
+  padding: 2px 6px 2px 6px;
+}
