@@ -3,11 +3,11 @@ var step=1;
 function onLoad()
 {
 	var image1 = new Image()
-image1.src = "Desert.jpg"
+image1.src = "images/Desert.jpg"
 var image2 = new Image()
-image2.src = "Jellyfish.jpg"
+image2.src = "images/Jellyfish.jpg"
 var image3 = new Image()
-image3.src = "Penguins.jpg"
+image3.src = "images/Penguins.jpg"
 console.log(step);
 	document.images.slide.src = eval("image"+step+".src");
 		if(step<3)
