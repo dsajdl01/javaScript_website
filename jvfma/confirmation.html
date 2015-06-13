@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="Templates/twocolumns.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<title>Yum Juices to purchase</title>
+		<link rel="stylesheet" type="text/css" href="yumstyle.css" media="all"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script  language="JavaScript" type="text/javascript" src="juicesDis.js"></script>
+	</head>
+	<body onload="getConfirmationDataLoaded()">
+		<div id="main">
+			<div id="header">
+				<h1>Yum Juices</h1>
+			</div>
+			<div id="paymentTopBar">
+					<a class="welcome" href="index.html">Welcome Yum Juicers</a> &minus;&minus;&gt; 
+					<a class="address" href="#">Address &#38; Payment</a> &minus;&minus;&gt; 
+					<a id="comfimCon" class="confirm" href="#">Confirmention</a>
+			</div>
+			<a class="backToAddrPage" href="purchase.html" onclick="getResultBack()">Back to form page</a>
+			<h3 class="ConHeading">Confirm Your Order and Details</h3>
+			<p class="formDiscription">Compare if your shopping list and all personal details match and then confirm your payment by pressing confirm button or press button back to personal form to change any details.</p>
+				<div class="mainTable">
+					<div class="SubTableOfFirstBlog">
+								<div class="orderHeadCon">
+									<table>
+									<tr id="tableHead" class="tableLine">
+										<td><span id="orderName"></span></td>
+										<td><span id="orderType"></span></td>
+										<td><span id="orderPrice"></span></td>
+										<td><span id="orderQuantity"></span></td>
+										<td><span id="orderTotal"></span></td>
+									</tr>
+									<tr id="tableBody" class="tableLine">
+										<td class="nameControl"><span id="outcomeName"></span></td>
+										<td class="typeControl"><span id="outcomeType"></span></td>
+										<td class="priceControl"><span id="outcomePrice"></span></td>
+										<td class="quantConrol"><span id="outcomeQuant"></span></td>
+										<td class="totalControl"><span id="outcomeTotal"></span></td>
+									</tr>
+									</table>
+								</div>
+									<p class="totalResCon"> <span id="totalOfOrderCon" ></span> </p>	
+								<div class="subTableOfOutcome">
+									<p class="rowOdd1"><span id="discountRate1Con"></span> <span id="totalWithDiscountCon2"></span> </p>
+									<p class="rowEven1"> <span id="VATRate1Con"></span><span id="totalWithVATCon" ></span></p>
+								</div>
+					</div>
+				
+					<div class="subTableDel">
+						<h3>Delivery Address</h3>
+						<p class="rowOdd"> Title: <span id="TitleCon"></span> First Name: <span id="frsNameCon"></span>  Second Name: <span id="secNameCon"></span></p>
+						<p class="rowEven"> E-mail: <span id="mailCon"></span> Telephone Number: <span id="telCon"></span></p>
+						<p class="rowOdd"> Address.1: <span id="address1Con"></span> Address.2: <span id="address2Con"></span></p>
+						<p class="rowEven"> City: <span id="cityCon"></span> Post Code: <span id="postCodeCon"></span> Province: <span id="provinceCon"></span></p>
+					</div>
+					<div class="subTableCard">
+						<h3>Card details</h3>
+						<p class="rowOdd"> Type Of Card: <span id="typeOfCardCon"></span> Card Holder Name <span id="cardNameHoldCon"></span></p>
+						<p class="rowEven"> Credit Card Number <span id="cardNumCon"></span></p>
+						<p class="rowOdd"> Month of Expire <span id="monthCon"></span> Year of Expire <span id="yearCon"></span> CVV <span id="cvvCon"></span></p>
+					</div>
+					<div class="subTableBankAddr">
+						<h3>Your Bank Address</h3>
+						<p class="rowOdd"> Address.1: <span id="address1BankCon"></span> Address.2: <span id="address2BankCon"></span></p>
+						<p class="rowEven"> City: <span id="cityBankCon"></span> Post Code: <span id="postCodeBankCon"></span> Province: <span id="provinceBankCon"></span></p>
+					</div>
+					<input type="submit" value="Confirm" class="btnConfrm" onclick="getConfirm()" />
+					<input type="button" id="btnBackToPersonalForm" value="&laquo; Back to Personal form" onclick="getResultBack()" />
+				</div>
+			<div id="footer">
+				<p>Copyright &#169;Yum Juices, 2013</p>
+			</div>
+		</div>
+	</body>
+</html>

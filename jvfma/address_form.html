@@ -1,0 +1,236 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="Templates/twocolumns.dwt" codeOutsideHTMLIsLocked="false" -->
+	<head>
+		<title>Yum Juices to purchase</title>
+		<link rel="stylesheet" type="text/css" href="yumstyle.css" media="all"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script  language="JavaScript" type="text/javascript" src="juicesDis.js"></script>
+	</head>
+	<body onload="getAddresFormOnLoad()">
+		<div id="main">
+			<div id="header">
+				<h1>Yum Juices</h1>
+			</div>
+				<div id="paymentTopBar">
+						<a class="welcome" href="index.html">Welcome Yum Juicers</a> &minus;&minus;&gt; 
+						<a class="address" href="address_form.html">Address &#38; Payment</a>  &minus;&minus;&gt; 
+						<a id="comfim" class="confirm" href="#">Confirmention</a>
+				</div>
+			<div id="content">
+					<a class="backPage" href="purchase.html" onclick="getResultBack()">Back to shopping page</a>
+					<div class="previoseOrder">
+						<p class="firstRow">Numbers of crates of juices that was ordered <span id="cratesOrder"></span>
+						</p>
+						<p class="secondrow"> Total price to be paid <span id="totalSumOrder"></span>
+						</p>
+					</div>
+							<form id="addresForm" action="?">
+										<fieldset id="personal">
+													<legend>Personal Details</legend>
+															
+															<div class="firstPersonalDetails">
+																<p class="infrmDetails">Personal Information</p>
+																	<div class="rowForPrsDerails1">
+																			<p class ="myTitleP">Title<br />
+																					<select id="personTitle">
+																						<option>Title</option>
+																						<option>Dr</option>
+																						<option>Mr</option>
+																						<option>Mrs</option>
+																						<option>Mr</option>
+																						<option>Master</option>
+																					</select><br />
+																					<span id="personTitleMessage"></span>
+																			</p>
+																			<p class="firstNameP">First Name:<br/>
+																				<input type="text" id="firstName" /><br />
+																				<span id="firstNameMessage"></span>
+																			</p>
+																			<p class="secondNameP">Second Name:<br />
+																				<input type="text" id="secondName" /><br />
+																				<span id="secondNameMessage"></span>
+																			</p>
+																	</div>
+																		<p class="telNumberP">Tel. Number:<br />
+																			<input type="text" id="telNumber" maxlength="11" /><span id="telNumberMessage"></span>
+																		</p>
+																	<div class="rowForPrsDerails2">		
+																			<p class="mailAddress1">E-mail Address:<br />
+																				<input type="text" id="EmailAddress" style="width: 200px;" /><br />
+																				<span id="EmaiAddressMessage"></span>
+																			</p>
+																			<p class="mailAddress2">Confirm E-mail Address:<br />
+																				<input type="text" id="comEmailAddres" style="width: 200px;" /><br />
+																				<span id="comEmailAddressMessage"></span>
+																			</p>
+																	</div>
+															</div>
+															
+															
+															<div class="secondPersonalDetails">
+																	<p class="infrmDetails"> Delivery Address</p>
+																	<div class="rowForAddress1">
+																			<p class="prsAddress1">Address 1:<br />
+																				<input type="text" id="address1" /><br />
+																				<span id="address1Message"></span>
+																			</p>
+																			<p class="prsAddress2">Address 2:<span class="Opt">(Optional)</span><br />
+																				<input type="text" id="address2" /><br />
+																				<span id="address2Message"></span>
+																			</p>
+																	</div>
+																	<div class="rowForAddress2">
+																			<p class="dlCity">City:<br />
+																				<input type="text" id="city" /><br />
+																				<span id="cityMessage"></span>
+																			</p>
+																			<p class="dlPostCode">Post Code:<br />
+																				<input type="text" id="postCode" /><br />
+																				<span id="postCodeMessage"></span>
+																			</p>
+																			<p class="dlRegion">Region:<br />
+																				<select id="Region" name="RegionDropDown">
+																					<option>Region</option>
+																					<option>England</option>
+																					<option>Scotland</option>
+																					<option>Wales</option>
+																					<option>Northern Ireland</option>
+																					<option>Channel Islands</option>
+																					<option>Isle Of Man</option>
+																				</select><br />
+																				<span id="RegionMessage"></span>
+																			</p>
+																	</div>
+															</div>
+															
+															
+													<div class="thirdPersonalDetails">
+																<p class="infrmDetails">Credit Card Details</p>
+																<p class="typeOfCardP">Type of Card:<br />
+																	<select id="typeOfCard">
+																		<option>Type of Payment</option>
+																		<option>American Express</option>
+																		<option>Maestro</option>
+																		<option>Master Card</option>
+																		<option>MasterCard Debit</option>
+																		<option>Solo</option>
+																		<option>Visa</option>
+																		<option>Visa Debit/Delta</option>
+																		<option>Visa Electron</option>
+																	</select><span id="typeOfPaymentMessage"></span>
+																</p>
+
+																<div class="cardFirstRow">
+																		<p class ="titleP">Title<br />
+																			<select id="cardTitle">
+																				<option>Title</option>
+																				<option>Dr</option>
+																				<option>Mr</option>
+																				<option>Mrs</option>
+																				<option>Mr</option>
+																				<option>Master</option>
+																			</select><br />
+																			<span id="titleMessage"></span>
+																		</p>
+																		<p class="cardFirstName">Card Holder First Name<br />
+																			<input type="text" id="cardHolderFirstName" /><br />
+																			<span id="cardHolderFirstNameMessage"></span>
+																		</p>
+																		<p class="cardSecondName">Second Name<br />
+																			<input type="text" id="cardHolderSecondName" /><br />
+																			<span id="cardHolderSecondNameMessage"></span>
+																		</p>
+																</div>
+																<p class="carNumberP">Card Number <br />
+																<input type="text" id="cardNum" style="width: 250px;" /><span id="cardNumberMessage"></span></p> 
+																<div class="cardSecondRow">
+																		<p class="expireDateP">Expire Date<br />
+																			<select id="ExpiryMonths">
+																				<option>Expiry Month</option>
+																				<option>01</option>
+																				<option>02</option>
+																				<option>03</option>
+																				<option>04</option>
+																				<option>05</option>
+																				<option>06</option>
+																				<option>07</option>
+																				<option>08</option>
+																				<option>09</option>
+																				<option>10</option>
+																				<option>11</option>
+																				<option>12</option>
+																			</select><br />
+																			<span id="expiryMonthMessage"></span>
+																		</p>
+																		<p class="expiryYearP">
+																			<select id="expiryYear">
+																				<option>Expiry Year</option>
+																				<option>2013</option>
+																				<option>2014</option>
+																				<option>2015</option>
+																				<option>2016</option>
+																				<option>2017</option>
+																				<option>2018</option>
+																				<option>2019</option>
+																				<option>2020</option>
+																				<option>2021</option>
+																				<option>2022</option>
+																				<option>2023</option>
+																				<option>2024</option>
+																			</select><br />
+																			<span id="expiryYearMessage"></span>
+																		</p>
+																		<p class="cvvP">CVV<br />
+																			<input type="text" id="cvvCode" style="width: 50px" maxlength="3"/> <a class="whatIsCvv" href="#" onclick="openCvvWindow()">What is CVV</a> <br />
+																			<span id="cvvMessage"></span>
+																		</p>
+																</div>
+																<p>If the delivery address is the same as the bank address press button
+																	<input type="button" id="btnSameAddress" value="Get Delivery Address" onclick="getAddress()" /></p>
+																	
+																			<div class="addrBankRow1">
+																				<p class="bankAddressCol1">Bank Address 1:<br />
+																					<input type="text" id="Address1Bank" /><br />
+																					<span id="addressBankMessage"></span>
+																				</p>
+																				<p class="bankAddressCol2">Address 2:<span class="Opt">(Optional)</span><br />
+																					<input type="text" id="address2Bank" /><br />
+																					<span id="address2BankMessage"></span>
+																				</p>
+																			</div>
+																			
+																			<div class="addrBankRow2">
+																					<p class="bankCity">City:<br />
+																						<input type="text" id="cityBank" /><br />
+																						<span id="cityBankMessage"></span>
+																					</p>
+																					<p class="bankPostCode">Post Code:<br />
+																						<input type="text" id="postCodeBank" /><br />
+																						<span id="postCodeBankMessage"></span>
+																					</p>
+																					<p class="bankRegion">Region:<br />
+																						<select id="RegionBank" >
+																							<option>Region</option>
+																							<option>England</option>
+																							<option>Scotland</option>
+																							<option>Wales</option>
+																							<option>Northern Ireland</option>
+																							<option>Channel Islands</option>
+																							<option>Isle Of Man</option>
+																						</select><br />
+																						<span id="regionBankAddressMessage"></span>
+																					</p>
+																			</div>
+															<input type="button" value="submit" class="btnSabmit" onclick="getPersonalDetails()" />
+															<input type="button" id="btnBackToPurchase" value="&laquo; Back to Shopping" onclick="getResultBack()" />
+													</div>
+										</fieldset>
+							</form>
+			</div>
+			<div id="footer">
+				<p>Copyright &#169;Yum Juices, 2013</p>
+			</div>
+		</div>
+	</body>
+</html>
